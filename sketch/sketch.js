@@ -1,33 +1,24 @@
-function setup() {
-  createCanvas(1080, 720);
-}
-
-function draw() {
-  background(220);
-}// Click and drag the mouse to view the scene from different angles.
-
 let shape;
 
 function setup() {
-  createCanvas(100, 100, WEBGL);
-
-  // Create the p5.Geometry object.
+  createCanvas(windowWidth, windowHeight, WEBGL);
   shape = buildGeometry(createShape);
-
-  describe('A white cone drawn on a gray background.');
 }
 
 function draw() {
-  background(200);
-
-  // Enable orbiting with the mouse.
+  background(18, 24, 35);
   orbitControl();
 
-  // Draw the p5.Geometry object.
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  normalMaterial();
   model(shape);
 }
 
-// Create p5.Geometry object from a single cone.
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function createShape() {
-  cone();
+  cone(140, 260);
 }
