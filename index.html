@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Your Page Title</title>
+  <head>
+    <title>Your Page Title</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="author" content="Your name">
-  <meta name="description" content="Brief description">
+    <meta name="author" content="Your name">
+    <meta name="description" content="Brief description">
 
-  <meta property="og:title" content="Your Page Title">
-  <meta property="og:description" content="Brief description">
-  <meta property="og:image" content="/some-image.png">
-  <meta property="og:url" content="/this-page.html">
-  <meta property="og:site_name" content="Your Site Name">
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Brief description">
+    <meta property="og:image" content="/some-image.png">
+    <meta property="og:url" content="/this-page.html">
+    <meta property="og:site_name" content="Your Site Name">
 
-  <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  </head>
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-</head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <p class="eyebrow">P5 / Editorial / Study</p>
+        <h1>Kooiiiiiiiii</h1>
+        <p class="intro">
+          A compact editorial-style page that pairs simple shapes, atmosphere, and a video reference into one calm visual experience.
+        </p>
+      </header>
 
-<body>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#p5-experiment">P5 Experiment</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#dog">Dog</a></li>
+          <li><a href="#god">God</a></li>
+        </ul>
+      </nav>
 
-  <h1>Kooiiiiiiiii</h1>
+      <main>
+        <section class="card" id="p5-experiment">
+          <h2>Observable Chart</h2>
+          <p>An editorial composition built from soft, offset circles and a muted palette.</p>
+          <svg viewBox="0 0 400 220" role="img" aria-label="Abstract chart made of circles">
+            <circle cx="100" cy="85.5" r="111" />
+            <circle cx="200" cy="44" r="52.5" />
+            <circle cx="300" cy="22" r="33" />
+            <circle cx="100" cy="11" r="52.5" />
+          </svg>
+        </section>
 
-  <nav>
-    <ul>
-        <li>P5 Experiment</li>
-        <li> Food</li>
-        <li> dog</li>
-        <li> god</li>
+        <section class="card" id="food">
+          <h3>Chart Study</h3>
+          <p>The second panel repeats the visual rhythm in a more structured layout.</p>
+          <svg viewBox="0 0 400 220" role="img" aria-label="Second abstract chart">
+            <circle cx="100" cy="85.5" r="111" />
+            <circle cx="200" cy="44" r="52.5" />
+            <circle cx="300" cy="22" r="33" />
+            <circle cx="100" cy="11" r="52.5" />
+          </svg>
+        </section>
 
-    </ul>
-  </nav>
-<section>
-    <h2>Observable chart</h2>
-    <svg>
-<circle cx="100" cy="85.5" r="111" fill="#FF6E0D"/>
-<circle cx="200" cy="44" r="52.5" fill="#FF6E0D"/>
-<circle cx="300" cy="22" r="33" fill="#FF6E0D"/>
-<circle cx="100" cy="11" r="52.5" fill="#FF6E0D"/>
-</svg>
-<section>
-    <h3> chart</h3>
-    <svg>
-<circle cx="100" cy="85.5" r="111" fill="#FF6E0D"/>
-<circle cx="200" cy="44" r="52.5" fill="#FF6E0D"/>
-<circle cx="300" cy="22" r="33" fill="#FF6E0D"/>
-<circle cx="100" cy="11" r="52.5" fill="#FF6E0D"/>
-</svg>
-</section>
-</section>
-  <script src="script.js"></script>
-</body>
-<iframe width="822" height="462" src="https://www.youtube.com/embed/aEQ90SjYOlo" title="The McKinsey Issue Tree Explained: How to Solve Any Complex Problem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="card" id="dog">
+          <h3>Atmosphere</h3>
+          <p>Minimal spacing, strong contrast, and a calm editorial rhythm guide the page.</p>
+        </section>
+      </main>
+
+      <figure class="video-card">
+        <iframe
+          src="https://www.youtube.com/embed/aEQ90SjYOlo"
+          title="The McKinsey Issue Tree Explained: How to Solve Any Complex Problem"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
