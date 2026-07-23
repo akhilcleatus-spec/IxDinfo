@@ -1,0 +1,2 @@
+# IxDinfo
+Information design lecture
